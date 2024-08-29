@@ -1,25 +1,33 @@
 import { useState } from "react";
 import "./App.css";
-import { Link, BrowserRouter, Routes, Route } from "react-router-dom";
+import { Link, Routes, Route } from "react-router-dom";
 import AllPlayers from "./components/AllPlayers";
+import SinglePlayer from "./components/SinglePlayer";
+import NavBar from "./components/NavBar";
+import NewPlayerForm from "./components/NewPlayerForm"
 
 function App() {
-  // const [count, setCount] = useState(0)
+  const [player, setPlayer] = useState(null);
+  const [players, setPlayers] = useState([]);
 
   return (
     <>
       <div>
-        {/* <Link to="https://fsa-puppy-bowl.herokuapp.com/api/2407-FTB-ET-WEB-FT">To Home</Link> */}
+        <NavBar />
+      </div>
+      <div>
+        <NewPlayerForm />
       </div>
 
       <div>
-        <BrowserRouter>
+       
           <Routes>
             <Route path="/" element={<AllPlayers />} />
-            {/* <Route path="/players/:id" element={<SinglePlayer />} /> */}
+            <Route path="/players/:id" element={<SinglePlayer />} />
           </Routes>
-        </BrowserRouter>
+        
       </div>
+      
     </>
   );
 }

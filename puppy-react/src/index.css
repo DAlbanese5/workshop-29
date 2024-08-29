@@ -15,7 +15,7 @@
 
 a {
   font-weight: 500;
-  color: #646cff;
+  color: aqua;
   text-decoration: inherit;
 }
 a:hover {
@@ -28,11 +28,15 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  background-image: url(https://kansashydrographics.com/cdn/shop/products/Puppy_Paws_530x@2x.jpg?v=1527368598);
+  /* background-position: stretch; */
 }
 
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+  margin: 0;
+  padding: 10px;
 }
 
 button {
@@ -42,7 +46,7 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: #fff9f9;
   cursor: pointer;
   transition: border-color 0.25s;
 }
@@ -65,4 +69,81 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+img {
+  width: 300px;
+  height: 300px;
+}
+
+.AllPlay {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.ulAll {
+  text-align: center;
+  margin: 8px;
+  border: 2px solid rgb(70, 9, 92);
+  overflow: auto;
+  padding: 10px;
+  background-color: rgba(67, 67, 67, 0.898);
+}
+
+.search {
+  color: aqua;
+  background-color: rgba(67, 67, 67, 0.898);
+  border: 10px solid rgba(67, 67, 67, 0.898);
+}
+
+.showAll {
+  color: aqua;
+  background-color: rgba(67, 67, 67, 0.898);
+  border: 10px solid rgba(67, 67, 67, 0.898);
+}
+
+.deleteButton {
+  color: rgb(0, 0, 0);
+  border: 2px solid black;
+}
+
+#name {
+  cursor: pointer;
+  border: 2px solid black;
+  background-color: white;
+  color: black;
+}
+
+#name:hover {
+  color: #535bf2;
+  background-color: bisque;
+  border: 2px solid white;
+
+}
+
+.header {
+  background-color: rgb(70, 9, 92);
+  color: #f9f9f9;
+  /* border: 3px solid grey; */
+}
+
+.forminput {
+  background-color: rgb(70, 9, 92);
+  
+}
+
+.wholeform {
+  background-color: rgb(70, 9, 92);
+  border: 2px solid grey;
+}
+
+.submitform {
+  color: black;
+  border: 2px solid black;
+}
+
+.fyi {
+  background-color: rgb(67, 67, 67);
+
 }
